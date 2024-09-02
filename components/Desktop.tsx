@@ -1,5 +1,6 @@
 import React from "react";
 import Taskbar from "./Taskbar";
+import Window from "./Window";
 
 export default function Desktop() {
   return (
@@ -17,6 +18,8 @@ export default function Desktop() {
         fontFamily: "Tahoma, Arial, sans-serif",
       }}
     >
+      {/* windows */}
+      <Window title="My Computer">My Computer</Window>
       <Taskbar />
     </div>
   );

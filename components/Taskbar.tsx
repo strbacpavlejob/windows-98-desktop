@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
+import StartButton from "./StartButton";
 
 const formatTime = (date: Date) =>
   date.toLocaleTimeString([], {
@@ -37,30 +38,7 @@ export default function Taskbar() {
       }}
     >
       {/* Start Button */}
-      <button
-        style={{
-          backgroundColor: "#c3c3c3",
-          border: "1px solid #fff",
-          boxShadow: "1px 1px 0 #000 inset",
-          fontSize: "14px",
-          padding: "4px 8px",
-          cursor: "pointer",
-          display: "flex",
-          alignItems: "center",
-          color: "#000",
-        }}
-      >
-        <Image
-          src="/images/windows98-start.png"
-          alt="Start"
-          width={16}
-          height={16}
-          style={{
-            marginRight: "5px",
-          }}
-        />
-        Start
-      </button>
+      <StartButton />
       {/* System Clock */}
       <div
         style={{
